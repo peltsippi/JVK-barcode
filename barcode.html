@@ -1,0 +1,43 @@
+<html>
+<meta charset="UTF-8">
+  <body>
+
+    <h1>JVK virtual barcode creator</h1>
+	
+	<h3>by <a href="https://github.com/peltsippi">Timo Pelkonen</a>
+	<br>
+	<br>
+  </body>
+  
+  
+  <div class="row">
+    <div class="col-6">
+        Summa (€)
+    </div>
+    <div class="col-3">
+        <input type="number" value="50.00" id="sum"/>
+    </div>
+	<div class="col-6">
+       PVM
+    </div>
+    <div class="col-2">
+		<input type="date" id="date" />
+    </div>
+	<br>
+	<br>
+	<div class="col-6">
+       <button id ="doit" name="create" type="submit">Create barcode</button>
+    </div>
+	<br>
+</div>
+  <div class="row my-4">
+        <div class="col-9 text-right total">
+         Virtual barcode:
+        </div>
+        <div class="col-2 total-val">
+          <span id="barcode"></span>
+        </div>
+      </div>
+	  <script src="barcode.js">
+</script>
+</html>
